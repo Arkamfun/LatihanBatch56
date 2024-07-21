@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Day2/tugas2/css/style.css">
+    <link rel="stylesheet" href="assets\fontawesome\css\all.css">
+    <title>contact</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Day2/tugas2/assets/Logo-Brand.png" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <a href="contact.html"> <button>Contact Me</button></a>
+            
+        </div>
+    </nav>
+    <section class="form-container">
+        <div class="form-contact">
+            <h2>Get in Touch</h2>
+                <form action=""class="form">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your Name" id="name">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your Email"
+                id="email">
+                <label for="phone">Phone Number</label>
+                <input type="text" placeholder="Your Phone Number..."
+                id="phone">
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="" hidden>select Your Position</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fullstack">Fullstack</option>
+                </select>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" onclick="getData(event)"  >Submit</button>
+                </form>s
+        </div>
+     </section>
+
+        
+        
+
+
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
