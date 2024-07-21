@@ -309,6 +309,9 @@ label {
   gap: 10px;
 }
 
+.card-title a {
+ text-decoration:none;
+}
 .button button {
   width: 50%;
   border: none;
