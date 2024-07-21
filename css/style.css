@@ -276,12 +276,10 @@ label {
   border-radius: 10px;
 }
 
-.card-title .title {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-weight: bold;
-  font-size: 24px;
+.card-title a {
+  text-decoration: none;
 }
+
 .card-title .durasi {
   margin-top: 0;
 }
