@@ -54,11 +54,19 @@ li a:hover {
   box-shadow: 2px 0 5px grey;
 }
 
+.drop-down {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 /* container section */
 
 .container {
   display: flex;
-  width: 120vh;
+  max-width: 150vh;
   background-color: white;
   margin: auto;
   margin-top: 30px;
@@ -66,6 +74,7 @@ li a:hover {
   padding: 20px;
   justify-content: space-around;
   box-shadow: 0 0 20px grey;
+  flex-direction: row;
 }
 
 /* left box */
@@ -286,6 +295,11 @@ label {
   margin-top: 0;
 }
 
+.card-title a {
+  text-decoration: none;
+  color: black;
+}
+
 .card-desc {
   width: 300px;
   height: 150px;
@@ -327,3 +341,128 @@ label {
 .contact-btn {
   cursor: pointer;
 }
+
+/* media responsive  */
+
+/* x-small */
+@media only screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box-left {
+    margin: auto;
+  }
+  .icon {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .download-section {
+    text-align: center;
+  }
+
+  /* x-small navbar */
+
+  nav .menu ul li {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .drop-down {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .active {
+    display: none;
+  }
+
+  .drop-down-menu {
+    padding-left: 0;
+  }
+  .drop-down li {
+    margin-top: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 0 3px 1px grey;
+  }
+  .drop-down li a {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+/* small */
+@media only screen and (min-width: 576px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box-left {
+    margin: auto;
+  }
+  .icon {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .download-section {
+    text-align: center;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+}
+
+/* medium */
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 150vh;
+  }
+  .box-left {
+    margin: auto;
+  }
+  .icon {
+    text-align: start;
+  }
+  .box-right {
+    margin-left: 30px;
+  }
+  .download-section {
+    text-align: start;
+  }
+}
+
+/* large */
+@media screen(min-width:992px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 150vh;
+  }
+}
+
+/* extra large */
+@media screen(min-width:1200px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 150vh;
+  }
+}
+
+/* XXL */
+@media screen(min-width:1400px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 150vh;
+  }
+}
+/* media responsive finish */

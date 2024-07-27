@@ -144,3 +144,15 @@ function getBlogData (event) {
 }
 
 };
+
+// drop down active line start
+
+const dropDown = document.querySelector('.drop-down-menu');
+
+function dropDownActive() {
+    dropDown.classList.toggle('active');
+    console.log(dropDown);
+}
+
+
+// drop down active line finish

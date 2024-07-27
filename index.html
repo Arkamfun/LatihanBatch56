@@ -2,28 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Tugas-2</title>
 
-    <link rel="stylesheet" href="/Day2/tugas2/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets\fontawesome\css\all.css">
 </head>
-<body>
+<body>  
 
     <!-- navbar start -->
     <nav class="navbar">
         <div class="logo">
-            <img src="/Day2/tugas2/assets/Logo-Brand.png" alt="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="blog.html">My Project</a></li>
-            </ul>
+            <img src="/assets/Logo-Brand.png" alt="logo">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="blog.html">My Project</a></li>
+                    <li> <a href="testimonial.html">Testimonial</a></li>
+                </ul>
+            </div>
         </div>
         <div class="contact">
             <a href="contact.html"> <button>Contact Me</button></a>
             
+            
         </div>
-    </nav>
+        <!-- breadcrumbs button -->
+         <div class="breadcrumbs">
+            <button onclick="dropDownActive()"><i class="fa-regular fa-bars fa-2xl"></i></button>
+         </div>
+
+        </nav>
+        <div class="drop-down">
+           <ul class="drop-down-menu">
+               <li><a href="#">home</a></li>
+               <li><a href="blog.html">My Project</a></li>
+               <li><a href="contact.html">Contact Me</a></li>
+               <li> <a href="testimonial.html">Testimoni</a></li>
+           </ul>
+        </div>
     <!-- navbar end -->
 
     <!-- card section start -->
@@ -31,10 +48,12 @@
         <div class="box-left">
             <h1>Hi Welcome to my hut</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quo cupiditate id doloremque, modi exercitationem eos, nobis tempore expedita necessitatibus eligendi laudantium molestiae labore aliquid earum odio repellat quidem ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt animi sint adipisci quisquam, tempore quo provident fugit hic fuga officia velit exercitationem magnam earum magni, tenetur aspernatur ullam. Aut, tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum perspiciatis error ab ipsam ea molestiae culpa quos architecto asperiores beatae et itaque repellendus, nostrum quis debitis fugit exercitationem explicabo!</p>
-            <a href="contact.html"><button type="button" class="contact-btn"
-            >contact</button></a>
-            <p class="download">download CV</p>
-            <i class="fa-solid fa-download fa-xl" style="margin-left: 10px;"></i>
+            <div class="download-section">
+                <a href="contact.html"><button type="button" class="contact-btn"
+                    >contact</button></a>
+                    <p class="download">download CV</p>
+                    <i class="fa-solid fa-download fa-xl" style="margin-left: 10px;"></i>
+            </div>
             <div class="icon">
                 <i class="fa-brands fa-linkedin fa-2xl"></i>
                 <i class="fa-brands fa-facebook fa-2xl" ></i>
