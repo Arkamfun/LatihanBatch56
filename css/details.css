@@ -16,11 +16,11 @@
 .img-details {
   display: flex;
   width: 100%;
-  object-fit: contain;
+  gap: 50px;
 }
 
 .img {
-  width: 50%;
+  width: 100%;
 }
 
 .img img {
@@ -30,8 +30,8 @@
 .details {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding-left: 50px;
+  width: 100%;
+  padding-left: 0;
 }
 
 .details .duration-title {
@@ -74,4 +74,28 @@
 .tech-list div {
   display: flex;
   gap: 30px;
+}
+
+/* small screen */
+
+@media only screen and (max-width: 576px) {
+  .detail-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-section h1 {
+    font-size: 30px;
+  }
+  .img-details {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .img;
 }
