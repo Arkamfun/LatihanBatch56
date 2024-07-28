@@ -159,6 +159,7 @@ li a:hover {
   flex-direction: column;
   width: 80vh;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -371,6 +372,30 @@ label {
     text-align: center;
   }
 
+  .form-container {
+    margin-top: 0;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .date-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .date-container div {
+    width: 100%;
+  }
+
+  .submit {
+    text-align: center;
+  }
+
   /* x-small navbar */
 
   nav .menu ul li {
@@ -405,6 +430,11 @@ label {
     color: black;
     font-weight: bold;
   }
+
+  .tech-checkbox {
+    width: 100%;
+  }
+  .submit;
 }
 
 /* small */
