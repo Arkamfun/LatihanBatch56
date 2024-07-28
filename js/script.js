@@ -55,7 +55,9 @@ function getBlogData (event) {
     let techTypescript = document.getElementById("typescript");
     let techReact = document.getElementById("react");
 
-    event.preventDefault();
+
+
+  
 
     // cek input kosong
     if(ProjectName == "") {
@@ -73,7 +75,7 @@ function getBlogData (event) {
 
     // checkbox logic
     let selectedValues = [];
-    let listStack =``
+    let listStack =``;
     if (techNode.checked) {
         selectedValues.push(imgNode);
       }
@@ -88,6 +90,7 @@ function getBlogData (event) {
       }
       for(let i = 0; i < selectedValues.length; i++) {
         listStack += selectedValues[i];
+
     }
 
 
@@ -103,7 +106,17 @@ function getBlogData (event) {
         desc: desc,
         
       }
-
+        
+      document.getElementById("title").value = "";
+      document.getElementById("startDate").value = "";
+      document.getElementById("endDate").value = "";
+      document.getElementById("desc").value = "";
+        techNode.checked = false;
+        techNext.checked = false;
+        techTypescript.checked = false;
+        techReact.checked = false;  
+      
+      
       blogDatas.push(blogData);
       console.log(blogDatas);
 
@@ -141,13 +154,17 @@ function getBlogData (event) {
                     </div>
             </div>`
 
+        ProjectName = "";
 }
 
+
+event.preventDefault();
 };
 
 // drop down active line start
 
 const dropDown = document.querySelector('.drop-down-menu');
+
 
 function dropDownActive() {
     dropDown.classList.toggle('active');
