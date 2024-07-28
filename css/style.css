@@ -155,6 +155,7 @@ li a:hover {
   text-align: center;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 80vh;
 }
