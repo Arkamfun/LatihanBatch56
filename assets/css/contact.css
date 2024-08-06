@@ -1,0 +1,27 @@
+form {
+  width: 500px;
+  margin: 50px auto;
+}
+
+label {
+  display: block;
+}
+
+div {
+  padding: 10px;
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+form button {
+  float: right;
+}
